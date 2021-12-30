@@ -51,14 +51,14 @@ public class EU7Homework {
         WebElement Message = driver.findElement(By.xpath("//*[@id=\"registrationForm\"]/div[8]/div/small[2]"));
         String ActualMessage = Message.getText();
 
-        Assert.assertTrue(expectedMessage.equals(ActualMessage));
+        Assert.assertEquals(ActualMessage, expectedMessage);
 
-        if (expectedMessage.equals(ActualMessage)) {
+       /* if (expectedMessage.equals(ActualMessage)) {
             System.out.println("PASS");
         } else {
             System.out.println("FAİL");
 
-        }
+        }*/
     }
 
     @Test
@@ -102,7 +102,7 @@ public class EU7Homework {
         WebElement warning = driver.findElement(By.xpath("//*[@id=\"registrationForm\"]/div[1]/div/small[2]"));
         String actualWarning =   warning.getText();
 
-        Assert.assertTrue(expectedwarning.equals(actualWarning));
+        Assert.assertEquals(actualWarning, expectedwarning);
 
       /*  if (expectedwarning.equals(actualWarning)) {
             System.out.println("PASS");
@@ -125,7 +125,7 @@ public class EU7Homework {
         WebElement warning = driver.findElement(By.xpath("//*[@id=\"registrationForm\"]/div[2]/div/small[2]"));
         String actualWarning =   warning.getText();
 
-        Assert.assertTrue(expectedwarning.equals(actualWarning));
+        Assert.assertEquals(actualWarning, expectedwarning);
 
 
     }
