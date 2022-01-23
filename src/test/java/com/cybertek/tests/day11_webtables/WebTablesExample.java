@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
         public void setUp(){
             driver = WebDriverFactory.getDriver("chrome");
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
             driver.get("http://practice.cybertekschool.com/tables");
         }
 
