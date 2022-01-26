@@ -20,6 +20,7 @@ public class PositiveLoginTest extends TestBase {
 //        loginPage.usernameInput.sendKeys(username);
 //        loginPage.passwordInput.sendKeys(password);
 //        loginPage.loginBtn.click();
+
         loginPage.loginAsDriver();
 
         Assert.assertEquals(driver.getCurrentUrl(),"https://qa1.vytrack.com/");
