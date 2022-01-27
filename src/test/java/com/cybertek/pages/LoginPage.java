@@ -54,6 +54,11 @@ public class LoginPage {
         passwordInput.sendKeys(password);
         loginBtn.click();
     }
+    public void loginAsSalesManager(){
+        usernameInput.sendKeys(ConfigurationReader.get("salesmanager_username"));
+        passwordInput.sendKeys(ConfigurationReader.get("salesmanager_password"));
+        loginBtn.click();
+    }
 
 }
 

@@ -15,4 +15,5 @@ public class ContactsPage extends BasePage{
         String xpath ="//td[contains(text(),'"+email+"')][@data-column-label='Email']";
         return Driver.get().findElement(By.xpath(xpath));
     }
+
 }

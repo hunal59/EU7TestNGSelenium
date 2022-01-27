@@ -2,7 +2,7 @@ package com.cybertek.tests.day9_waits;
 
 import com.cybertek.utilities.WebDriverFactory;
 import net.bytebuddy.asm.Advice;
-import org.checkerframework.checker.units.qual.A;
+//import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,6 +18,7 @@ import org.testng.annotations.Test;
 import java.sql.SQLOutput;
 import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class EU7Homework {
 
@@ -27,7 +28,7 @@ public class EU7Homework {
     @BeforeMethod
     public void setUp() {
         driver = WebDriverFactory.getDriver("chrome");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
     }
 
