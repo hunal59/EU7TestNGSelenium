@@ -51,6 +51,7 @@ import org.testng.annotations.Test;
 
             //sending file with sendKeys method
             String projectPath = System.getProperty("user.dir");
+            System.out.println("projectPath = " + projectPath);
             String filePath = "src/test/resources/textfile.txt";
             String fullPath = projectPath+"/"+filePath;
             chooseFile.sendKeys(fullPath);
